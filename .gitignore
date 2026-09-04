@@ -1,0 +1,68 @@
+# Research data and derived artifacts must remain local.
+/data/
+/Article/
+/logs/
+/results/
+/results_*/
+/models/
+/checkpoints/
+/predictions/
+/runs/
+/archive/
+
+# Machine-specific configuration. Commit only the *.example files.
+/config/paths.yaml
+/config/lossless_cache_formal_v2.json
+.env
+.env.*
+!.env.example
+
+# Model and array artifacts.
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.npy
+*.npz
+*.sqlite
+*.sqlite3
+*.db
+
+# Compressed datasets and large image/medical-image files.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+
+# Python/editor/OS files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local operational handoff notes contain host-specific paths and timings.
+/ACCELERATION_*.md
+/scripts/prepare_and_run_*.ps1
+/scripts/profile_cache_hotpath_*.py
+/scripts/recover_training_queue_*.sh
+/scripts/run_stage1_calibrated_eval.sh
+/scripts/run_stage1_experiments.sh
+/scripts/run_stage1_seeds23_fast.sh
+/scripts/validate_cache_rollout_*.py

@@ -1,0 +1,11 @@
+raw:
+  chexpert: /absolute/path/to/CheXpert-v1.0
+  nih: /absolute/path/to/NIH_ChestXray14
+  vindr: /absolute/path/to/vindr-cxr/1.0.0
+
+processed:
+  manifest_dir: /absolute/path/to/project/data/processed
+  vindr_png: /absolute/path/to/processed/vindr_png_formal_v2
+
+results:
+  root: /absolute/path/to/project/results_formal_v2

@@ -1,0 +1,14 @@
+# Install a CUDA-compatible torch/torchvision pair separately from the official
+# PyTorch package index for the target GPU and driver.
+numpy>=2.0,<3
+pandas>=2.3,<4
+Pillow>=12,<13
+scikit-learn>=1.5,<2
+matplotlib>=3.10,<4
+pydicom>=3,<4
+tqdm>=4.67,<5
+PyYAML>=6,<7
+
+# Optional compressed-transfer-syntax support for some DICOM files:
+# pylibjpeg>=2,<3
+# pylibjpeg-libjpeg>=2,<3

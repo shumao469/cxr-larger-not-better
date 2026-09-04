@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "cache_path": "/absolute/path/to/cache/cxr_lossless_cache_v1.sqlite3",
+  "max_bytes": 20401094656,
+  "reserve_bytes": 26843545600,
+  "space_root": "/mnt/c",
+  "validation_report": "/absolute/path/to/cache_validation_report.json",
+  "validation_report_sha256": "REPLACE_WITH_VALIDATION_REPORT_SHA256",
+  "rollout": "Enable only after the lossless equivalence and free-space gates pass."
+}
