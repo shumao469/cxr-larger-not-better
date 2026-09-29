@@ -1,0 +1,53 @@
+{
+  "version": "NEJM-AI-controlled-development-statistics-v1-20260926",
+  "status": "Dated development analysis plan, frozen before the new controlled external predictions; previous benchmark findings are known. This is not prospective registration.",
+  "official_test_access": false,
+  "image_benchmark": "Previously evaluated VinDr-CXR 15000-image development release",
+  "reference_policies": {
+    "any_reader": 1,
+    "majority": 2,
+    "all_readers": 3
+  },
+  "primary_development_reference": "majority; an aggregation sensitivity definition, not expert adjudication",
+  "scale_comparisons": "Smallest versus full separately within each source, architecture and training schedule; DenseNet-121 at 20000 actual updates is the principal controlled comparison.",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260926,
+    "unit": "image identifier; patient independence remains unverified",
+    "pairing": "identical multinomial image weights for all model, finding and reference comparisons",
+    "training_seeds": "average the three paired seed-specific contrasts; report between-seed sample SD separately",
+    "intervals": "95% and 97.5% percentile intervals. The two primary matched-source contrasts receive 97.5% intervals; all development analyses remain exploratory."
+  },
+  "calibration_scope": "All 18 matched-update DenseNet-121 models; four findings and three reader reference policies. Other architectures and schedules are evaluated for discrimination and the separately frozen threshold strategy.",
+  "source_calibration": "Use each model's fixed source validation set with the frozen observed binary labels. The matched-update final checkpoint is selected without validation-performance selection. Retain source label selection limitations.",
+  "target_partition": {
+    "hash_input": "ldh-2026|vindr|image_id",
+    "calibration_pool": 3000,
+    "assessment": 12000
+  },
+  "calibration_budgets": [
+    250,
+    500,
+    1000,
+    2000
+  ],
+  "sampling_seeds": "71000 through 71019, nested within each repetition and identical across methods/models",
+  "probability_methods": [
+    "raw",
+    "source_logistic",
+    "target_constant_prevalence",
+    "target_logistic"
+  ],
+  "logistic": {
+    "input": "logit clipped to [1e-7,1-1e-7]",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "minimum_each_class": 5,
+    "negative_slope": "retain, identify and report; ranking reversal remains possible",
+    "nonfit": "retain as an explicit failed attempt; no fallback fit"
+  },
+  "probability_endpoints": "Brier score, ECE (15 equal-width bins) and Brier skill against calibration-sample constant prevalence; intercept/slope of the fitted recalibration map are reported separately from external calibration diagnostics. Repeated identical raw/source metrics are paired comparators, not independent estimates.",
+  "source_threshold": "Empirical 90% sensitivity on observed positive source-validation labels; external sensitivity/specificity on exactly the same 12000 development-assessment images, separately for each reader definition.",
+  "interpretation": "Clinical scenario: supplementary pleural-effusion review flags while all images receive routine interpretation. Neither the nominal 90% research target nor these public benchmark results establish hospital workload, patient outcomes or a new neural architecture. The existing order-statistic strategy is evaluated as an established method, not claimed as a new algorithm."
+}

@@ -1,0 +1,17 @@
+cohort,finding,images,evaluable,positive,negative
+CheXpert training,Cardiomegaly,87939,20069,15036,5033
+CheXpert training,Pleural_Effusion,87939,66400,50216,16184
+CheXpert training,Atelectasis,87939,20098,19384,714
+CheXpert training,Consolidation,87939,20826,8391,12435
+CheXpert validation,Cardiomegaly,12668,2968,2240,728
+CheXpert validation,Pleural_Effusion,12668,9462,7080,2382
+CheXpert validation,Atelectasis,12668,2862,2748,114
+CheXpert validation,Consolidation,12668,3067,1233,1834
+NIH training,Cardiomegaly,79481,79481,1994,77487
+NIH training,Pleural_Effusion,79481,79481,9506,69975
+NIH training,Atelectasis,79481,79481,8222,71259
+NIH training,Consolidation,79481,79481,3316,76165
+NIH validation,Cardiomegaly,11342,11342,279,11063
+NIH validation,Pleural_Effusion,11342,11342,1368,9974
+NIH validation,Atelectasis,11342,11342,1207,10135
+NIH validation,Consolidation,11342,11342,517,10825

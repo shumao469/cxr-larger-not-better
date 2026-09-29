@@ -1,0 +1,52 @@
+{
+  "version": "NEJM-AI-target-strategy-development-v1-20260926",
+  "status": "Dated development protocol; prior benchmark outcomes have been seen; not preregistered or confirmatory",
+  "clinical_question": "Does larger source training reduce the local annotation requirement for reliable pleural-effusion secondary-review thresholds after controlling optimization budget?",
+  "clinical_role": "Research simulation of an additional-review flag for radiographic pleural effusion; routine interpretation continues for every image. No autonomous exclusion, emergency-triage, outcome or workload claim.",
+  "development_images": "Previously evaluated VinDr 15000; preserve ldh-2026|vindr|image_id hash order, first 3000 calibration-pool and remaining 12000 assessment",
+  "development_models": "All 30 frozen legacy models; use all 66 controlled source-trained models after completion for the strengthened study",
+  "primary_finding": "Pleural_Effusion",
+  "secondary_findings": [
+    "Cardiomegaly",
+    "Atelectasis",
+    "Consolidation"
+  ],
+  "reference_policies": [
+    "any_reader",
+    "majority",
+    "all_readers"
+  ],
+  "primary_development_reference": "majority of three independent released reader labels; operational development reference, not adjudicated clinical truth",
+  "calibration_sizes": [
+    250,
+    500,
+    1000,
+    2000
+  ],
+  "sampling_seeds": "71000 through 71019; same nested subsets for every model and method",
+  "sensitivity_target": 0.9,
+  "violation_probability": 0.05,
+  "methods": [
+    "empirical target sensitivity threshold",
+    "positive-class order-statistic threshold with a nominal 95% one-sided population-sensitivity bound"
+  ],
+  "threshold_rule": "Predict positive if score >= t. Sort n positive calibration scores ascending. Choose largest k such that BinomialCDF(k-1;n,0.10)<=0.05; set t to kth score. If no such k exists, report insufficient evidence, not a flag-all fallback.",
+  "assumptions": "Fixed scoring model; independent identically distributed positive calibration observations; same population and reference-label mechanism at assessment. Guarantees do not cover hospital or label-policy shifts. Image identifiers do not verify patient independence.",
+  "probability_calibration": "Existing raw/constant/ridge-logistic comparisons remain separate. Monotonic probability recalibration alone cannot change ranking or the sensitivity-specificity tradeoff when thresholds are transformed consistently.",
+  "outcomes": [
+    "threshold feasibility at each annotation budget",
+    "assessment sensitivity and specificity",
+    "false negatives and false positives conditional on reference labels",
+    "fraction of resampling runs below target sensitivity",
+    "paired specificity difference among feasible methods",
+    "calibration event counts"
+  ],
+  "summary_rules": "Show all requested runs and failures. Report descriptive 10th-90th percentiles across model/sampling runs, not confidence intervals. Conditional performance excludes failures only when denominators and failure rates are also explicit. Repeated draws and seeds are not independent hospitals.",
+  "final_test": "VinDr official 3000 labels and performance remain locked until provenance disposition and all analysis choices are frozen. Training and test annotation mechanisms differ; test results assess that transfer and receive no automatic statistical guarantee.",
+  "novelty_boundary": "Order-statistic/Neyman-Pearson error control is established methodology. Candidate contribution is evidence about data-scale, local-label budgets, reference definitions and operating-point reliability, not a new network or theorem.",
+  "references": [
+    "https://doi.org/10.1126/sciadv.aao1659",
+    "https://jmlr2020.csail.mit.edu/papers/v21/18-577.html",
+    "https://physionet.org/content/vindr-cxr/1.0.0/"
+  ]
+}

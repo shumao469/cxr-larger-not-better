@@ -1,0 +1,736 @@
+[
+  {
+    "file": "Assessment_calibration_diagnostics.csv",
+    "rows": 120,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "model_seed",
+      "finding",
+      "method",
+      "calibration_intercept",
+      "calibration_joint_intercept",
+      "calibration_slope",
+      "diagnostic_status",
+      "AUROC",
+      "average_precision"
+    ]
+  },
+  {
+    "file": "Clinical_operating_points.csv",
+    "rows": 10,
+    "columns": [
+      "source",
+      "head",
+      "threshold",
+      "models",
+      "sensitivity",
+      "specificity",
+      "fn",
+      "fp",
+      "flagged"
+    ]
+  },
+  {
+    "file": "Cohort_characteristics.csv",
+    "rows": 7,
+    "columns": [
+      "cohort",
+      "images",
+      "patient_identifiers",
+      "female",
+      "male",
+      "sex_other_or_missing",
+      "age_available",
+      "age_missing",
+      "age_zero",
+      "age_median",
+      "age_q1",
+      "age_q3",
+      "AP",
+      "PA",
+      "projection_other_or_missing"
+    ]
+  },
+  {
+    "file": "Conditional_exact_operating_intervals.csv",
+    "rows": 18,
+    "columns": [
+      "source",
+      "model_seed",
+      "method",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity",
+      "sensitivity_lower",
+      "sensitivity_upper",
+      "specificity_lower",
+      "specificity_upper",
+      "interval"
+    ]
+  },
+  {
+    "file": "Consensus_calibration_all_attempts.csv",
+    "rows": 11808,
+    "columns": [
+      "run_id",
+      "source",
+      "training_size",
+      "model_seed",
+      "finding",
+      "assessment_images",
+      "assessment_positive",
+      "calibration_images",
+      "calibration_positive",
+      "sampling_seed",
+      "method",
+      "fit_status",
+      "Brier",
+      "ECE",
+      "Brier_skill_vs_constant",
+      "fit_n",
+      "fit_positive",
+      "fit_negative",
+      "map_intercept",
+      "map_slope",
+      "negative_map_slope"
+    ]
+  },
+  {
+    "file": "Consensus_calibration_maps.csv",
+    "rows": 144,
+    "columns": [
+      "run_id",
+      "source",
+      "training_size",
+      "model_seed",
+      "finding",
+      "assessment_images",
+      "assessment_positive",
+      "method",
+      "fit_n",
+      "fit_positive",
+      "fit_negative",
+      "fit_status",
+      "map_intercept",
+      "map_slope",
+      "negative_map_slope",
+      "calibration_images",
+      "calibration_positive",
+      "sampling_seed"
+    ]
+  },
+  {
+    "file": "Consensus_label_counts.csv",
+    "rows": 8,
+    "columns": [
+      "role",
+      "finding",
+      "images",
+      "positive_labels",
+      "negative_labels"
+    ]
+  },
+  {
+    "file": "Consensus_macro_metrics.csv",
+    "rows": 66,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "seed",
+      "architecture",
+      "schedule",
+      "AUROC",
+      "average_precision",
+      "Brier",
+      "ECE"
+    ]
+  },
+  {
+    "file": "Consensus_paired_strategy_differences.csv",
+    "rows": 96,
+    "columns": [
+      "source",
+      "training_size",
+      "finding",
+      "left",
+      "right",
+      "metric",
+      "difference",
+      "ci95_lower",
+      "ci95_upper",
+      "valid_replicates"
+    ]
+  },
+  {
+    "file": "Consensus_per_finding_metrics.csv",
+    "rows": 264,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "seed",
+      "architecture",
+      "schedule",
+      "finding",
+      "images",
+      "positive_labels",
+      "AUROC",
+      "average_precision",
+      "Brier",
+      "ECE"
+    ]
+  },
+  {
+    "file": "Consensus_threshold_all_attempts.csv",
+    "rows": 5976,
+    "columns": [
+      "run_id",
+      "source",
+      "training_size",
+      "model_seed",
+      "finding",
+      "assessment_images",
+      "assessment_positive",
+      "method",
+      "calibration_images",
+      "calibration_positive",
+      "sampling_seed",
+      "feasible",
+      "threshold",
+      "failure_reason",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity",
+      "order_rank"
+    ]
+  },
+  {
+    "file": "Data_catalog.csv",
+    "rows": 36,
+    "columns": [
+      "file",
+      "rows",
+      "columns",
+      "fields",
+      "unit_of_record",
+      "interpretation"
+    ]
+  },
+  {
+    "file": "Data_dictionary.csv",
+    "rows": 187,
+    "columns": [
+      "file",
+      "column",
+      "type",
+      "description"
+    ]
+  },
+  {
+    "file": "Development_same_image_reference_metrics.csv",
+    "rows": 792,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "seed",
+      "architecture",
+      "schedule",
+      "reference_policy",
+      "finding",
+      "images",
+      "positive_labels",
+      "AUROC",
+      "average_precision",
+      "Brier",
+      "ECE"
+    ]
+  },
+  {
+    "file": "Development_to_consensus_threshold_transfer.csv",
+    "rows": 720,
+    "columns": [
+      "source",
+      "training_size",
+      "model_seed",
+      "sampling_seed",
+      "method",
+      "feasible",
+      "threshold",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity"
+    ]
+  },
+  {
+    "file": "Exact_finite_pool_feasibility.csv",
+    "rows": 15,
+    "columns": [
+      "target",
+      "minimum_positive_order_statistic",
+      "budget",
+      "pool_images",
+      "pool_positive",
+      "finite_pool_probability"
+    ]
+  },
+  {
+    "file": "Head_effects_and_source_contrasts.csv",
+    "rows": 48,
+    "columns": [
+      "finding",
+      "head_loss",
+      "contrast",
+      "metric",
+      "effect",
+      "lower",
+      "upper",
+      "paired_fits",
+      "head_budget",
+      "bootstrap_repeats"
+    ]
+  },
+  {
+    "file": "Head_effect_bootstrap.csv",
+    "rows": 64000,
+    "columns": [
+      "finding",
+      "head_loss",
+      "source",
+      "metric",
+      "replicate",
+      "effect"
+    ]
+  },
+  {
+    "file": "Hypothetical_error_costs.csv",
+    "rows": 216,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "model_seed",
+      "finding",
+      "method",
+      "budget",
+      "miss_to_false_alarm_cost",
+      "weighted_errors_per_1000",
+      "flag_all_cost_per_1000",
+      "flag_none_cost_per_1000"
+    ]
+  },
+  {
+    "file": "Joint_bootstrap_draws.csv",
+    "rows": 6012,
+    "columns": [
+      "source",
+      "replicate",
+      "method",
+      "feasible_models",
+      "calibration_positive",
+      "assessment_positive",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity",
+      "Brier"
+    ]
+  },
+  {
+    "file": "Joint_paired_strategy_differences.csv",
+    "rows": 12,
+    "columns": [
+      "source",
+      "left",
+      "right",
+      "metric",
+      "difference",
+      "lower",
+      "upper",
+      "valid",
+      "requested"
+    ]
+  },
+  {
+    "file": "Joint_uncertainty_summary.csv",
+    "rows": 18,
+    "columns": [
+      "source",
+      "method",
+      "metric",
+      "estimate",
+      "lower",
+      "upper",
+      "valid",
+      "requested",
+      "interval"
+    ]
+  },
+  {
+    "file": "Local_head_fit_attempts.csv",
+    "rows": 576,
+    "columns": [
+      "run_id",
+      "source",
+      "model_seed",
+      "head_budget",
+      "sampling_seed",
+      "head_loss",
+      "finding",
+      "fitting_positives",
+      "fitting_negatives",
+      "status",
+      "iterations"
+    ]
+  },
+  {
+    "file": "Local_head_metrics.csv",
+    "rows": 468,
+    "columns": [
+      "run_id",
+      "source",
+      "model_seed",
+      "head_budget",
+      "sampling_seed",
+      "head_loss",
+      "finding",
+      "fitting_positives",
+      "fitting_negatives",
+      "method",
+      "AUROC",
+      "average_precision",
+      "Brier",
+      "ECE",
+      "log_loss",
+      "local_map_status",
+      "recalibrated_Brier",
+      "recalibrated_ECE",
+      "recalibrated_log_loss",
+      "empirical_feasible",
+      "empirical_tp",
+      "empirical_fn",
+      "empirical_tn",
+      "empirical_fp",
+      "empirical_sensitivity",
+      "empirical_specificity",
+      "guarded_feasible",
+      "guarded_tp",
+      "guarded_fn",
+      "guarded_tn",
+      "guarded_fp",
+      "guarded_sensitivity",
+      "guarded_specificity"
+    ]
+  },
+  {
+    "file": "Local_head_operating_bootstrap.csv",
+    "rows": 4008,
+    "columns": [
+      "source",
+      "head_loss",
+      "method",
+      "replicate",
+      "paired_fits",
+      "sensitivity",
+      "specificity",
+      "fn",
+      "fp"
+    ]
+  },
+  {
+    "file": "Local_head_operating_intervals.csv",
+    "rows": 32,
+    "columns": [
+      "source",
+      "head_loss",
+      "method",
+      "metric",
+      "difference_head_minus_original",
+      "lower",
+      "upper",
+      "valid",
+      "requested",
+      "head_budget",
+      "calibration_budget",
+      "interval"
+    ]
+  },
+  {
+    "file": "Local_head_paired_intervals.csv",
+    "rows": 32,
+    "columns": [
+      "source",
+      "head_budget",
+      "head_loss",
+      "finding",
+      "metric",
+      "difference_head_minus_original",
+      "lower",
+      "upper",
+      "paired_fits",
+      "expected_fits",
+      "bootstrap_repeats",
+      "conditioning"
+    ]
+  },
+  {
+    "file": "Local_head_summary.csv",
+    "rows": 56,
+    "columns": [
+      "source",
+      "head_budget",
+      "head_loss",
+      "finding",
+      "AUROC",
+      "Brier",
+      "recalibrated_Brier",
+      "empirical_sensitivity",
+      "empirical_specificity",
+      "guarded_sensitivity",
+      "guarded_specificity"
+    ]
+  },
+  {
+    "file": "Local_sample_composition.csv",
+    "rows": 3204,
+    "columns": [
+      "budget",
+      "sampling_repeat",
+      "finding",
+      "positive",
+      "negative"
+    ]
+  },
+  {
+    "file": "Model_registry_and_training.csv",
+    "rows": 66,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "seed",
+      "architecture",
+      "schedule",
+      "training_images",
+      "training_patients",
+      "validation_images",
+      "validation_patients",
+      "updates",
+      "best_update",
+      "stop_reason",
+      "hours"
+    ]
+  },
+  {
+    "file": "Paired_scale_gains.csv",
+    "rows": 6,
+    "columns": [
+      "source",
+      "architecture",
+      "schedule",
+      "reference_policy",
+      "images",
+      "gain",
+      "between_seed_SD",
+      "valid_bootstrap_replicates",
+      "requested_bootstrap_replicates",
+      "paired_seed_1_gain",
+      "paired_seed_2_gain",
+      "paired_seed_3_gain",
+      "bootstrap_95_lower",
+      "bootstrap_95_upper",
+      "bootstrap_97_5_lower",
+      "bootstrap_97_5_upper"
+    ]
+  },
+  {
+    "file": "Positive_count_summary.csv",
+    "rows": 60,
+    "columns": [
+      "source",
+      "size",
+      "positive_labels",
+      "method",
+      "attempts",
+      "feasibility",
+      "sensitivity_mean",
+      "specificity_mean",
+      "specificity_p10",
+      "specificity_p90"
+    ]
+  },
+  {
+    "file": "Positive_count_threshold_experiment.csv",
+    "rows": 36000,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "model_seed",
+      "finding",
+      "positive_labels",
+      "repeat",
+      "method",
+      "feasible",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity"
+    ]
+  },
+  {
+    "file": "Probability_budget_all_attempts.csv",
+    "rows": 96120,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "model_seed",
+      "finding",
+      "budget",
+      "repeat",
+      "positive",
+      "negative",
+      "method",
+      "feasible",
+      "failure_reason",
+      "Brier",
+      "ECE",
+      "log_loss",
+      "Brier_skill_vs_local_constant",
+      "map_intercept",
+      "fit_n",
+      "fit_positive",
+      "fit_negative",
+      "fit_status",
+      "map_slope",
+      "negative_map_slope"
+    ]
+  },
+  {
+    "file": "Probability_budget_summary.csv",
+    "rows": 200,
+    "columns": [
+      "source",
+      "finding",
+      "method",
+      "budget",
+      "attempts",
+      "feasibility",
+      "Brier_mean",
+      "Brier_p10",
+      "Brier_p90",
+      "ECE_mean",
+      "log_loss_mean"
+    ]
+  },
+  {
+    "file": "Reliability_binned_seed1.csv",
+    "rows": 60,
+    "columns": [
+      "source",
+      "seed",
+      "finding",
+      "method",
+      "bin",
+      "mean_probability",
+      "observed_positive_fraction",
+      "images"
+    ]
+  },
+  {
+    "file": "Source_label_counts.csv",
+    "rows": 16,
+    "columns": [
+      "cohort",
+      "finding",
+      "images",
+      "evaluable",
+      "positive",
+      "negative"
+    ]
+  },
+  {
+    "file": "Source_training_trajectories.csv",
+    "rows": 342,
+    "columns": [
+      "run_id",
+      "updates",
+      "validation_macro_auroc"
+    ]
+  },
+  {
+    "file": "Threshold_budget_all_attempts.csv",
+    "rows": 86562,
+    "columns": [
+      "run_id",
+      "source",
+      "size",
+      "model_seed",
+      "finding",
+      "method",
+      "budget",
+      "repeat",
+      "target",
+      "positive",
+      "feasible",
+      "threshold",
+      "tp",
+      "fn",
+      "tn",
+      "fp",
+      "sensitivity",
+      "specificity",
+      "negative",
+      "order_rank",
+      "below_target",
+      "false_negatives_per_1000",
+      "false_positives_per_1000"
+    ]
+  },
+  {
+    "file": "Threshold_budget_summary.csv",
+    "rows": 198,
+    "columns": [
+      "source",
+      "size",
+      "method",
+      "budget",
+      "target",
+      "attempts",
+      "feasible_attempts",
+      "feasibility",
+      "positive_min",
+      "positive_max",
+      "sensitivity_mean",
+      "sensitivity_p10",
+      "sensitivity_p90",
+      "specificity_mean",
+      "specificity_p10",
+      "specificity_p90",
+      "fn_mean",
+      "fn_p10",
+      "fn_p90",
+      "fp_mean",
+      "fp_p10",
+      "fp_p90",
+      "below_target_fraction"
+    ]
+  }
+]

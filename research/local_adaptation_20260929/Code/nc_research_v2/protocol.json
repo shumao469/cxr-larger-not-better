@@ -1,0 +1,49 @@
+{
+  "version": "NC-local-adaptation-extension-v2-20260929",
+  "status": "Dated exploratory extension after prior consensus results were examined; not preregistered or confirmatory",
+  "target": "Nature Communications with clinical validation framing",
+  "authorization": "User requested all three layers of analyses and training, using existing public data only",
+  "primary_question": "How do source training scale, local positive-label resources and adaptation strategy jointly affect discrimination, calibration and threshold reliability?",
+  "existing_controls": "Reuse verified 66 source models, including 18 fixed 20000-update unweighted DenseNet models and 18 ResNet controls",
+  "new_source_loss_control": "Six DenseNet121 runs at the existing patient-defined 10000-image subsets, two sources and three original seeds, subset-weighted masked BCE, identical 20000-update protocol and final checkpoint; pair with six completed unweighted controls",
+  "weighted_loss": "positive weight clip(n_negative/n_positive,1,20), computed only from source training subset",
+  "calibration_budgets": [
+    100,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "sampling_repeats": 200,
+  "sampling_seed_start": 291000,
+  "reference": "Official consensus 1000-image calibration and 2000-image assessment roles remain unchanged; VinDr 15000 is a previously evaluated three-reader development benchmark",
+  "probability_methods": [
+    "raw",
+    "source_logistic",
+    "local_constant",
+    "local_intercept",
+    "local_logistic"
+  ],
+  "threshold_methods": [
+    "source_empirical",
+    "local_empirical",
+    "local_order_statistic"
+  ],
+  "sensitivity_targets": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "primary_threshold_target": 0.9,
+  "nominal_violation_probability": 0.05,
+  "local_composition": "Exploratory positive-only threshold calibration at 5,10,20,29,40 positive images, sampled without replacement from the fixed calibration pool; case enrichment is not used to estimate population probability calibration",
+  "local_classifier_training": "For the six full-scale matched models, freeze backbone and fit a new linear head on the existing 3000-image VinDr development calibration pool using majority labels. Budgets 250,500,1000,2000, three fixed sampling seeds. Fixed ridge logistic C=0.01 with source feature scaling learned only on the head fitting subset. Compare unweighted and balanced head fitting. Consensus 1000 calibrates the adapted model; consensus 2000 evaluates. Training and calibration label mechanisms differ and are reported.",
+  "head_scope": "Local linear-head retraining; not end-to-end target fine-tuning. The 12000-image VinDr development assessment remains excluded from fitting.",
+  "clinical_role": "Exploratory additional-review flag for radiographic pleural effusion while routine interpretation continues; target sensitivity is a research operating target, not a validated clinical requirement",
+  "decision_analysis": "Threshold strategies evaluated for hypothetical missed-positive to false-positive costs of 5,10,20,50. Report cost-weighted errors on study reference labels, never real clinical net benefit or workload savings. No treatment decision curve without a supported clinical action.",
+  "uncertainty": "Shared paired assessment bootstrap with 2000 repeats conditional on fixed fitted models; separate three-seed SD; joint calibration and assessment bootstrap 500 repeats at full local pool to assess adaptation sampling uncertainty. Overlapping subsamples are not independent cohorts and their quantiles are not confidence intervals.",
+  "failure_reporting": "Preserve every fit and threshold request including class scarcity, optimizer failure and order-statistic infeasibility; show denominators and conditional performance",
+  "model_selection": "No selection or tuning against assessment labels. All specified sources, seeds and methods reported; negative or null findings retained.",
+  "claims": "No universal sample size recommendation, no new order-statistic theorem, no new architecture, no new hospital validation, no clinical outcome claim",
+  "preservation": "Legacy salts, partitions, checkpoints and delivered manuscripts remain unchanged"
+}

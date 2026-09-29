@@ -1,0 +1,110 @@
+[
+  {
+    "file": "nc_research/train_controlled.py",
+    "original_sha256": "370697d918843e1ae6095ff9087c4615c7c177a64a402d3d9f5b5b73d014abb2",
+    "release_sha256": "d771ecfb78d83a88cf97a2a3da48694b0bef6ad974c7d7436f55df5f2c16f429",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research/test_controlled.py",
+    "original_sha256": "0513b12e3162124417aada2ff1e992bd6c22460ac325164503c88ceba25a29b6",
+    "release_sha256": "0513b12e3162124417aada2ff1e992bd6c22460ac325164503c88ceba25a29b6",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research/cxr_lossless_cache.py",
+    "original_sha256": "39b4c07ef73dc439d870bf32b037f9202aad55e8e7322f8702239e42d9955a73",
+    "release_sha256": "59eb318de0be51090660c36a14cdae30b9a8264ce5ce7fd5922c6f98c8f985f3",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/threshold_strategy.py",
+    "original_sha256": "1a02a38faaf8af47abd32cf030367a77df6755fc22088e3e38c869b898a19fad",
+    "release_sha256": "7c26fa2fe055bcd14fd808ebf965c8e5e5d1e642af801a0888c5cf19c9e2aa3d",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/controlled_statistics.py",
+    "original_sha256": "b292b2c04a3d4d45a49d873c486a67d092b156cb208325e1160c5c62f8410813",
+    "release_sha256": "d54706ccdccf5febb4876ddbe1ee2515c3fcacb66a5944ace21fbd092cbe9704",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/consensus_statistics.py",
+    "original_sha256": "7f1345aae09dbad53cf558b0b7021eac1cde06c5ff46be2f2357619570a8f75b",
+    "release_sha256": "ca26d4e06da4c7c958f01da569554dd8605d1fbe5cecc4fc4e4b49094c2978d3",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/test_threshold_strategy.py",
+    "original_sha256": "8cc8b61fa68642ffa5e67c4d82a92ebebd752c14e937e93cc6e933d1a46405a8",
+    "release_sha256": "8cc8b61fa68642ffa5e67c4d82a92ebebd752c14e937e93cc6e933d1a46405a8",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/test_controlled_statistics.py",
+    "original_sha256": "f42fb96aa510e0a5366141fc69012338f04c5d35ffe57366ee4485ba9a829685",
+    "release_sha256": "0db86c951b482c1d376583fb4c6a1c9155e40409d7b4867918e77f77030bae70",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nejm_ai_recovery/consensus_metadata.py",
+    "original_sha256": "62502f4de44facc580b54b573e70cf70cb7a70dae3884ed689ff2b39128149b0",
+    "release_sha256": "e0687adb3c81fa19e9c6533e826f5187f925eab82cb9d3eb81ccd9f2a4dbd474",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/analyze_local.py",
+    "original_sha256": "b56f1016fe688de580bc95932da562366820dfe691828e0dd7f643e2956e51e3",
+    "release_sha256": "bd3aee7843a4a22770968c8270077000112c2c72c66ace7514014f19a425c9db",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/train_local_heads.py",
+    "original_sha256": "31f04e75192d578a408867b79764056d93ee54e91b990592ac139ddf0ac8d124",
+    "release_sha256": "1b15dd6fc85aef81fd6d011f9cdcfc052e6e7e2908ffa19f93499af56e1bc751",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/uncertainty.py",
+    "original_sha256": "9319c86c7c9a1bc72f3cbafba4a7b67c9db439a31293aae93a4df2067c850c1a",
+    "release_sha256": "ee40ac02a7018231601d0807b65a1737ecc7e2dd2d4e0dac6e0687223ff3c018",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/head_uncertainty.py",
+    "original_sha256": "706d44f030c5d40f08c3fc1c26db92263e217d2e7ce77c94ddac07bd54af1214",
+    "release_sha256": "ff46557c1b9b51201854a2e590b25880b6c63020242085261aa625fccec8331c",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/head_operating_uncertainty.py",
+    "original_sha256": "534c2278ccfa0b66c4f706f48b976ded7e9f7e19f54f4c998220ae0b4f0e0c5f",
+    "release_sha256": "ec6193f08010493dca0488a3ab29e6c97f370f7103bc96faaab911a92a6c2bdb",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/test_extension.py",
+    "original_sha256": "83d8f0bfbb39958554c8e1d53056f31a5ad3be0ef998027ffffc42aa825815cc",
+    "release_sha256": "30797e4342e8a74659a35750f557a68a54facf059cf298c2433aea7535778082",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v2/summarize.py",
+    "original_sha256": "5a5f46091744ec613c024b07d67ae76d9b438abe74d44d535298085bbd18993c",
+    "release_sha256": "2ae66da5d939c788a43bf13faa4a3cd87644dc388b0ae03ed10e2be941bb2c0e",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research_v3/effect_audit.py",
+    "original_sha256": "4d063e5e086b1128253d0b13bebc6b97b553673e539254f12d119626606ea0c1",
+    "release_sha256": "d9ded59a176037f3bd6db33bbf9fbd3527a36d9de507e8aed9b7ebeb86a58343",
+    "change": "Filesystem roots made configurable; numerical routines and random seeds retained"
+  },
+  {
+    "file": "nc_research/prepare_study.py",
+    "original_sha256": "c509217c763aa0cbc8af4426e541377636ff4d1efea503f5f22ef507ef9cb108",
+    "release_sha256": "78d997792bf52ec40240ebd712c5c79aefd1640519ac9b78ff08e359bf9b6466",
+    "change": "Project, dataset and output CLI roots are required arguments; numerical preparation and nested sampling retained. Historical audit routine is preserved as dated provenance."
+  }
+]

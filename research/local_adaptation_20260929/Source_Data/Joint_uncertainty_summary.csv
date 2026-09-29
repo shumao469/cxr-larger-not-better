@@ -1,0 +1,19 @@
+source,method,metric,estimate,lower,upper,valid,requested,interval
+chexpert,constant,Brier,0.033366,0.026260649999999993,0.04070315,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,empirical,sensitivity,0.8985507246376813,0.7920377867746288,0.9666836769408723,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,empirical,specificity,0.949766960124288,0.9290718717683558,0.9754980942480942,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,guarded,sensitivity,0.9951690821256038,0.8893459915611814,1.0,494,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,guarded,specificity,0.6286897980321077,0.6128469092489103,0.9485613804539978,494,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,logistic,Brier,0.016374650182655548,0.013183070685255574,0.02048171840488003,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,raw,Brier,0.09724286924261011,0.08795083797014215,0.10687296678099333,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,source,sensitivity,0.9033816425120773,0.8407915273132663,0.9542132867132868,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+chexpert,source,specificity,0.9504574486449163,0.9412725378960248,0.9588618988324764,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,constant,Brier,0.033366,0.026260649999999993,0.04070315,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,empirical,sensitivity,0.8454106280193235,0.7439957264957265,0.9317538126361655,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,empirical,specificity,0.9344035905403073,0.8173753767482814,0.9638192789552136,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,guarded,sensitivity,0.9420289855072465,0.8340555555555556,0.9696969696969697,494,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,guarded,specificity,0.7604004833419644,0.7505419563615535,0.9030261093679964,494,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,logistic,Brier,0.018122427742594798,0.01446500766143329,0.023084561639301067,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,raw,Brier,0.01854151691937184,0.015017578520941897,0.02301745254894966,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,source,sensitivity,0.9178743961352658,0.8587235915492958,0.9644436906377204,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models
+nih,source,specificity,0.8268600034524426,0.8125644729279443,0.840894267078613,500,500,95% joint empirical-bootstrap percentile interval; fixed three source models

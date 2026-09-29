@@ -1,0 +1,8 @@
+cohort,images,patient_identifiers,female,male,sex_other_or_missing,age_available,age_missing,age_zero,age_median,age_q1,age_q3,AP,PA,projection_other_or_missing
+CheXpert training,87939,33471.0,36305,51634,0,87939,0,1,63.0,50.0,75.0,74209,13722,8
+CheXpert validation,12668,4794.0,5235,7433,0,12668,0,0,62.0,50.0,75.0,10540,2126,2
+NIH training,79481,21564.0,34447,45034,0,79481,0,8,49.0,35.0,59.0,31964,47517,0
+NIH validation,11342,3080.0,4989,6353,0,11342,0,2,48.0,33.0,59.0,4761,6581,0
+VinDr development,15000,,3514,3840,7646,4669,10331,905,52.0,27.0,64.0,0,0,15000
+VinDr consensus calibration,1000,,174,236,590,225,775,73,34.0,0.0,57.0,0,0,1000
+VinDr consensus assessment,2000,,378,466,1156,508,1492,196,33.0,0.0,59.0,0,0,2000

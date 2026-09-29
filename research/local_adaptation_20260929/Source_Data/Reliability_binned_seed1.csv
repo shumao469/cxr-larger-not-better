@@ -1,0 +1,61 @@
+source,seed,finding,method,bin,mean_probability,observed_positive_fraction,images
+chexpert,1,Pleural_Effusion,Raw,0,0.006393658462911844,0.0,200.0
+chexpert,1,Pleural_Effusion,Raw,1,0.01559116318821907,0.0,200.0
+chexpert,1,Pleural_Effusion,Raw,2,0.026208601891994476,0.0,201.0
+chexpert,1,Pleural_Effusion,Raw,3,0.03978225588798523,0.0,200.0
+chexpert,1,Pleural_Effusion,Raw,4,0.05961708724498749,0.0,199.0
+chexpert,1,Pleural_Effusion,Raw,5,0.09359726309776306,0.0,201.0
+chexpert,1,Pleural_Effusion,Raw,6,0.16436368227005005,0.005025125628140704,199.0
+chexpert,1,Pleural_Effusion,Raw,7,0.28792113065719604,0.0,200.0
+chexpert,1,Pleural_Effusion,Raw,8,0.5540328025817871,0.014925373134328358,201.0
+chexpert,1,Pleural_Effusion,Raw,9,0.9112162590026855,0.32663316582914576,199.0
+chexpert,1,Pleural_Effusion,Source calibrated,0,0.016665955577672434,0.0,200.0
+chexpert,1,Pleural_Effusion,Source calibrated,1,0.03422415380265459,0.0,200.0
+chexpert,1,Pleural_Effusion,Source calibrated,2,0.05146690721134411,0.0,201.0
+chexpert,1,Pleural_Effusion,Source calibrated,3,0.07119093226568439,0.0,200.0
+chexpert,1,Pleural_Effusion,Source calibrated,4,0.0972229134959634,0.0,199.0
+chexpert,1,Pleural_Effusion,Source calibrated,5,0.13719415522699807,0.0,201.0
+chexpert,1,Pleural_Effusion,Source calibrated,6,0.21026037958154142,0.005025125628140704,199.0
+chexpert,1,Pleural_Effusion,Source calibrated,7,0.32142484141874833,0.0,200.0
+chexpert,1,Pleural_Effusion,Source calibrated,8,0.5394369855763076,0.014925373134328358,201.0
+chexpert,1,Pleural_Effusion,Source calibrated,9,0.8746058383111206,0.32663316582914576,199.0
+chexpert,1,Pleural_Effusion,Locally calibrated,0,4.064012645237123e-05,0.0,200.0
+chexpert,1,Pleural_Effusion,Locally calibrated,1,0.00011171707944657649,0.0,200.0
+chexpert,1,Pleural_Effusion,Locally calibrated,2,0.00020404648784053462,0.0,201.0
+chexpert,1,Pleural_Effusion,Locally calibrated,3,0.0003334984844400327,0.0,200.0
+chexpert,1,Pleural_Effusion,Locally calibrated,4,0.0005418617563520864,0.0,199.0
+chexpert,1,Pleural_Effusion,Locally calibrated,5,0.0009465368869255744,0.0,201.0
+chexpert,1,Pleural_Effusion,Locally calibrated,6,0.0019777976899271518,0.005025125628140704,199.0
+chexpert,1,Pleural_Effusion,Locally calibrated,7,0.004556606343773716,0.0,200.0
+chexpert,1,Pleural_Effusion,Locally calibrated,8,0.01793273657675526,0.014925373134328358,201.0
+chexpert,1,Pleural_Effusion,Locally calibrated,9,0.3141156591728301,0.32663316582914576,199.0
+nih,1,Pleural_Effusion,Raw,0,0.00033041537972167134,0.0,200.0
+nih,1,Pleural_Effusion,Raw,1,0.000986044411547482,0.0,200.0
+nih,1,Pleural_Effusion,Raw,2,0.002056126482784748,0.0,203.0
+nih,1,Pleural_Effusion,Raw,3,0.0035429629497230053,0.005076142131979695,197.0
+nih,1,Pleural_Effusion,Raw,4,0.005752124823629856,0.0,200.0
+nih,1,Pleural_Effusion,Raw,5,0.00929864589124918,0.0049504950495049506,202.0
+nih,1,Pleural_Effusion,Raw,6,0.014876782894134521,0.005025125628140704,199.0
+nih,1,Pleural_Effusion,Raw,7,0.02677787095308304,0.02512562814070352,199.0
+nih,1,Pleural_Effusion,Raw,8,0.056940335780382156,0.024875621890547265,201.0
+nih,1,Pleural_Effusion,Raw,9,0.31963711977005005,0.2814070351758794,199.0
+nih,1,Pleural_Effusion,Source calibrated,0,0.0020429557898431925,0.0,200.0
+nih,1,Pleural_Effusion,Source calibrated,1,0.004677664628332499,0.0,200.0
+nih,1,Pleural_Effusion,Source calibrated,2,0.007991793921539756,0.0,203.0
+nih,1,Pleural_Effusion,Source calibrated,3,0.011868976574036386,0.005076142131979695,197.0
+nih,1,Pleural_Effusion,Source calibrated,4,0.016842933940001834,0.0,200.0
+nih,1,Pleural_Effusion,Source calibrated,5,0.023806268767785292,0.0049504950495049506,202.0
+nih,1,Pleural_Effusion,Source calibrated,6,0.033333571691731956,0.005025125628140704,199.0
+nih,1,Pleural_Effusion,Source calibrated,7,0.05060197715649248,0.02512562814070352,199.0
+nih,1,Pleural_Effusion,Source calibrated,8,0.08623355236372952,0.024875621890547265,201.0
+nih,1,Pleural_Effusion,Source calibrated,9,0.29739792700208606,0.2814070351758794,199.0
+nih,1,Pleural_Effusion,Locally calibrated,0,2.887141979694397e-05,0.0,200.0
+nih,1,Pleural_Effusion,Locally calibrated,1,0.00011671868730451375,0.0,200.0
+nih,1,Pleural_Effusion,Locally calibrated,2,0.00030876918677012733,0.0,203.0
+nih,1,Pleural_Effusion,Locally calibrated,3,0.0006352455332261561,0.005076142131979695,197.0
+nih,1,Pleural_Effusion,Locally calibrated,4,0.0012122532414429864,0.0,200.0
+nih,1,Pleural_Effusion,Locally calibrated,5,0.0023019710327760947,0.0049504950495049506,202.0
+nih,1,Pleural_Effusion,Locally calibrated,6,0.004325539710410228,0.005025125628140704,199.0
+nih,1,Pleural_Effusion,Locally calibrated,7,0.009592987070444313,0.02512562814070352,199.0
+nih,1,Pleural_Effusion,Locally calibrated,8,0.02692284197270255,0.024875621890547265,201.0
+nih,1,Pleural_Effusion,Locally calibrated,9,0.3078330870554509,0.2814070351758794,199.0

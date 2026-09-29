@@ -1,0 +1,9 @@
+role,finding,images,positive_labels,negative_labels
+assessment_locked,Cardiomegaly,2000,218,1782
+assessment_locked,Pleural_Effusion,2000,69,1931
+assessment_locked,Atelectasis,2000,57,1943
+assessment_locked,Consolidation,2000,65,1935
+calibration_candidate,Cardiomegaly,1000,91,909
+calibration_candidate,Pleural_Effusion,1000,42,958
+calibration_candidate,Atelectasis,1000,29,971
+calibration_candidate,Consolidation,1000,31,969

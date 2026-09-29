@@ -1,8 +1,16 @@
-# CXR Larger Is Not Better
+# Chest Radiograph AI: Training Scale and Local Adaptation
 
 Reproducible research code for studying how chest X-ray training-set size affects internal performance, external generalization, calibration, and diminishing returns.
 
 The formal experiment grid contains two training sources (NIH ChestX-ray14 and CheXpert v1.0), five sample-size conditions (`1k`, `5k`, `10k`, `50k`, and all available training images), and three seeds. VinDr-CXR v1.0.0 is used as an external cohort. Formal mode keeps the validation cohort fixed across seeds and writes to a separate output tree so that exploratory or recovered legacy results cannot be mixed with the formal rerun.
+
+## Local adaptation release — 29 September 2026
+
+[Code, aggregate results and reproduction instructions](research/local_adaptation_20260929/README.md) accompany the current four-figure manuscript. This completed release comprises 66 source classifiers, optimization and architecture controls, local probability and threshold analyses, and 576 requested binary local-head fits (468 successful). It supersedes the original fixed-five-epoch comparison for the controlled claims reported in this manuscript.
+
+The main clinical illustration examines how local adjustment changes missed pleural-effusion labels and false-positive flags on a fixed public consensus-reference assessment set. The extension is retrospective and exploratory; image separation, historical test-use uncertainty, fitting failures and uncertainty conditioning are documented. These results describe the study benchmark rather than established hospital workflow benefits.
+
+Aggregate verification and Figures 2–4 can be reproduced without original images or private predictions. The release distinguishes these tasks from record-level reruns, which require authorized dataset access and retained intermediate artifacts. No model training starts with the verification or figure commands. The separate unfinished source-weighted-loss experiment is outside this result set.
 
 ## Repository scope
 
@@ -15,7 +23,7 @@ This repository contains:
 - lossless resize-cache acceleration with fail-safe fallback to source images;
 - unit and integration tests for the main audit and acceleration safeguards.
 
-It intentionally excludes datasets, manifests containing image or patient identifiers, checkpoints, predictions, metrics, figures, logs, manuscript files, credentials, and machine-specific configuration. These remain on the local research workstation and are protected by `.gitignore`.
+The dated research release below includes curated aggregate metrics, model summaries and analysis code. Original images, manifests containing image or patient identifiers, checkpoints, record-level predictions, training logs, manuscript files, credentials and machine-specific configuration remain excluded from version control.
 
 ## Layout
 

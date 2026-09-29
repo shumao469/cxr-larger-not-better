@@ -1,0 +1,14 @@
+{
+  "stage": "complete",
+  "design": "Exploratory post hoc comparison of fixed fitted heads; common assessment bootstrap across sources and findings. Source contrasts compare effects on this common benchmark, not independent hospital populations.",
+  "reference_images": 2000,
+  "positive_counts": {
+    "Cardiomegaly": 218,
+    "Pleural_Effusion": 69,
+    "Atelectasis": 57,
+    "Consolidation": 65
+  },
+  "conditioning": "Fixed source checkpoints, local heads, head-fitting samples and calibration maps",
+  "multiplicity": "Unadjusted exploratory intervals; no confirmatory hypothesis testing",
+  "scope": "2,000-image head budget fixed in the earlier extension; both losses retained"
+}

@@ -1,0 +1,188 @@
+file,column,type,description
+Cohort_characteristics.csv,cohort,str,"Cohort for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,images,int64,Number of images in the indicated analysis or bin.
+Cohort_characteristics.csv,patient_identifiers,float64,Distinct available source patient identifiers; missing for VinDr because patient independence is unverified.
+Cohort_characteristics.csv,female,int64,"Female for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,male,int64,"Male for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,sex_other_or_missing,int64,"Sex other or missing for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,age_available,int64,"Age available for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,age_missing,int64,Images without interpretable recorded age; un-imputed.
+Cohort_characteristics.csv,age_zero,int64,"Images with recorded age equal to zero, retained as metadata and separately reported."
+Cohort_characteristics.csv,age_median,float64,"Age median for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,age_q1,float64,"Age q1 for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,age_q3,float64,"Age q3 for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,AP,int64,"Ap for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,PA,int64,"Pa for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Cohort_characteristics.csv,projection_other_or_missing,int64,"Projection other or missing for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_all_attempts.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Consensus_calibration_all_attempts.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_calibration_all_attempts.csv,training_size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_calibration_all_attempts.csv,model_seed,int64,"Training random seed (1, 2, or 3)."
+Consensus_calibration_all_attempts.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_calibration_all_attempts.csv,assessment_images,int64,"Images in the assessment subset, excluding local calibration images."
+Consensus_calibration_all_attempts.csv,assessment_positive,int64,Number of reference-positive assessment images for the stated finding.
+Consensus_calibration_all_attempts.csv,calibration_images,int64,Images allocated to the stated calibration attempt.
+Consensus_calibration_all_attempts.csv,calibration_positive,int64,Reference-positive calibration images for the finding and draw.
+Consensus_calibration_all_attempts.csv,sampling_seed,int64,Calibration-draw index; consensus full-pool draw is counted once.
+Consensus_calibration_all_attempts.csv,method,str,"Probability or threshold strategy; source methods transfer unchanged, target methods fit only in local calibration images."
+Consensus_calibration_all_attempts.csv,fit_status,str,"Fitted, comparator requiring no fit, insufficient classes, or nonconvergence."
+Consensus_calibration_all_attempts.csv,Brier,float64,Mean squared difference between probability and binary reference label.
+Consensus_calibration_all_attempts.csv,ECE,float64,Expected calibration error from 15 equal-width probability bins.
+Consensus_calibration_all_attempts.csv,Brier_skill_vs_constant,float64,1 minus method Brier score divided by the local-positive-fraction constant Brier score.
+Consensus_calibration_all_attempts.csv,fit_n,float64,"Fit n for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_all_attempts.csv,fit_positive,float64,"Fit positive for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_all_attempts.csv,fit_negative,float64,"Fit negative for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_all_attempts.csv,map_intercept,float64,Intercept of the source- or target-fitted probability transformation.
+Consensus_calibration_all_attempts.csv,map_slope,float64,Slope of the probability transformation on clipped logits; distinct from an assessment calibration slope.
+Consensus_calibration_all_attempts.csv,negative_map_slope,object,True when the fitted transformation reverses score ranking.
+Consensus_calibration_maps.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Consensus_calibration_maps.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_calibration_maps.csv,training_size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_calibration_maps.csv,model_seed,int64,"Training random seed (1, 2, or 3)."
+Consensus_calibration_maps.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_calibration_maps.csv,assessment_images,int64,"Images in the assessment subset, excluding local calibration images."
+Consensus_calibration_maps.csv,assessment_positive,int64,Number of reference-positive assessment images for the stated finding.
+Consensus_calibration_maps.csv,method,str,"Probability or threshold strategy; source methods transfer unchanged, target methods fit only in local calibration images."
+Consensus_calibration_maps.csv,fit_n,int64,"Fit n for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_maps.csv,fit_positive,int64,"Fit positive for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_maps.csv,fit_negative,int64,"Fit negative for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_calibration_maps.csv,fit_status,str,"Fitted, comparator requiring no fit, insufficient classes, or nonconvergence."
+Consensus_calibration_maps.csv,map_intercept,float64,Intercept of the source- or target-fitted probability transformation.
+Consensus_calibration_maps.csv,map_slope,float64,Slope of the probability transformation on clipped logits; distinct from an assessment calibration slope.
+Consensus_calibration_maps.csv,negative_map_slope,bool,True when the fitted transformation reverses score ranking.
+Consensus_calibration_maps.csv,calibration_images,float64,Images allocated to the stated calibration attempt.
+Consensus_calibration_maps.csv,calibration_positive,float64,Reference-positive calibration images for the finding and draw.
+Consensus_calibration_maps.csv,sampling_seed,float64,Calibration-draw index; consensus full-pool draw is counted once.
+Consensus_label_counts.csv,role,str,Frozen consensus calibration or assessment assignment.
+Consensus_label_counts.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_label_counts.csv,images,int64,Number of images in the indicated analysis or bin.
+Consensus_label_counts.csv,positive_labels,int64,Number of reference-positive images for the stated finding and subset.
+Consensus_label_counts.csv,negative_labels,int64,"Negative labels for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_macro_metrics.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Consensus_macro_metrics.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_macro_metrics.csv,size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_macro_metrics.csv,seed,int64,"Training random seed (1, 2, or 3)."
+Consensus_macro_metrics.csv,architecture,str,ImageNet-initialized classifier backbone.
+Consensus_macro_metrics.csv,schedule,str,"matched = final model at 20,000 updates; convergence = best source-validation checkpoint under the stated stopping rule."
+Consensus_macro_metrics.csv,AUROC,float64,Area under the receiver operating characteristic curve.
+Consensus_macro_metrics.csv,average_precision,float64,Average precision; the precision-recall summary.
+Consensus_macro_metrics.csv,Brier,float64,Mean squared difference between probability and binary reference label.
+Consensus_macro_metrics.csv,ECE,float64,Expected calibration error from 15 equal-width probability bins.
+Consensus_paired_strategy_differences.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_paired_strategy_differences.csv,training_size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_paired_strategy_differences.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_paired_strategy_differences.csv,left,str,Comparator method in a paired contrast.
+Consensus_paired_strategy_differences.csv,right,str,Compared method in a paired contrast.
+Consensus_paired_strategy_differences.csv,metric,str,Outcome used for the paired comparison.
+Consensus_paired_strategy_differences.csv,difference,float64,"Right method minus left method, averaged over three fixed model seeds."
+Consensus_paired_strategy_differences.csv,ci95_lower,float64,"Endpoint of paired 95% percentile image-bootstrap interval, conditional on fitted models and calibration pool."
+Consensus_paired_strategy_differences.csv,ci95_upper,float64,"Endpoint of paired 95% percentile image-bootstrap interval, conditional on fitted models and calibration pool."
+Consensus_paired_strategy_differences.csv,valid_replicates,int64,"Valid replicates for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Consensus_per_finding_metrics.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Consensus_per_finding_metrics.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_per_finding_metrics.csv,size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_per_finding_metrics.csv,seed,int64,"Training random seed (1, 2, or 3)."
+Consensus_per_finding_metrics.csv,architecture,str,ImageNet-initialized classifier backbone.
+Consensus_per_finding_metrics.csv,schedule,str,"matched = final model at 20,000 updates; convergence = best source-validation checkpoint under the stated stopping rule."
+Consensus_per_finding_metrics.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_per_finding_metrics.csv,images,int64,Number of images in the indicated analysis or bin.
+Consensus_per_finding_metrics.csv,positive_labels,int64,Number of reference-positive images for the stated finding and subset.
+Consensus_per_finding_metrics.csv,AUROC,float64,Area under the receiver operating characteristic curve.
+Consensus_per_finding_metrics.csv,average_precision,float64,Average precision; the precision-recall summary.
+Consensus_per_finding_metrics.csv,Brier,float64,Mean squared difference between probability and binary reference label.
+Consensus_per_finding_metrics.csv,ECE,float64,Expected calibration error from 15 equal-width probability bins.
+Consensus_threshold_all_attempts.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Consensus_threshold_all_attempts.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Consensus_threshold_all_attempts.csv,training_size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Consensus_threshold_all_attempts.csv,model_seed,int64,"Training random seed (1, 2, or 3)."
+Consensus_threshold_all_attempts.csv,finding,str,Imaging finding represented by the binary reference label.
+Consensus_threshold_all_attempts.csv,assessment_images,int64,"Images in the assessment subset, excluding local calibration images."
+Consensus_threshold_all_attempts.csv,assessment_positive,int64,Number of reference-positive assessment images for the stated finding.
+Consensus_threshold_all_attempts.csv,method,str,"Probability or threshold strategy; source methods transfer unchanged, target methods fit only in local calibration images."
+Consensus_threshold_all_attempts.csv,calibration_images,int64,Images allocated to the stated calibration attempt.
+Consensus_threshold_all_attempts.csv,calibration_positive,int64,Reference-positive calibration images for the finding and draw.
+Consensus_threshold_all_attempts.csv,sampling_seed,int64,Calibration-draw index; consensus full-pool draw is counted once.
+Consensus_threshold_all_attempts.csv,feasible,bool,Whether the threshold rule yielded a finite threshold for this attempt.
+Consensus_threshold_all_attempts.csv,threshold,float64,Scores greater than or equal to this value are flagged.
+Consensus_threshold_all_attempts.csv,failure_reason,str,Recorded reason for an unsuccessful attempt; blank on success.
+Consensus_threshold_all_attempts.csv,tp,float64,True positives among reference-positive assessment images.
+Consensus_threshold_all_attempts.csv,fn,float64,False negatives among reference-positive assessment images.
+Consensus_threshold_all_attempts.csv,tn,float64,True negatives among reference-negative assessment images.
+Consensus_threshold_all_attempts.csv,fp,float64,False positives among reference-negative assessment images.
+Consensus_threshold_all_attempts.csv,sensitivity,float64,tp/(tp+fn).
+Consensus_threshold_all_attempts.csv,specificity,float64,tn/(tn+fp).
+Consensus_threshold_all_attempts.csv,order_rank,float64,One-based ascending positive-score order statistic used by the uncertainty-aware threshold rule.
+Development_same_image_reference_metrics.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Development_same_image_reference_metrics.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Development_same_image_reference_metrics.csv,size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Development_same_image_reference_metrics.csv,seed,int64,"Training random seed (1, 2, or 3)."
+Development_same_image_reference_metrics.csv,architecture,str,ImageNet-initialized classifier backbone.
+Development_same_image_reference_metrics.csv,schedule,str,"matched = final model at 20,000 updates; convergence = best source-validation checkpoint under the stated stopping rule."
+Development_same_image_reference_metrics.csv,reference_policy,str,Reader aggregation or consensus definition used for evaluation.
+Development_same_image_reference_metrics.csv,finding,str,Imaging finding represented by the binary reference label.
+Development_same_image_reference_metrics.csv,images,int64,Number of images in the indicated analysis or bin.
+Development_same_image_reference_metrics.csv,positive_labels,int64,Number of reference-positive images for the stated finding and subset.
+Development_same_image_reference_metrics.csv,AUROC,float64,Area under the receiver operating characteristic curve.
+Development_same_image_reference_metrics.csv,average_precision,float64,Average precision; the precision-recall summary.
+Development_same_image_reference_metrics.csv,Brier,float64,Mean squared difference between probability and binary reference label.
+Development_same_image_reference_metrics.csv,ECE,float64,Expected calibration error from 15 equal-width probability bins.
+Development_to_consensus_threshold_transfer.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Development_to_consensus_threshold_transfer.csv,training_size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Development_to_consensus_threshold_transfer.csv,model_seed,int64,"Training random seed (1, 2, or 3)."
+Development_to_consensus_threshold_transfer.csv,sampling_seed,int64,Calibration-draw index; consensus full-pool draw is counted once.
+Development_to_consensus_threshold_transfer.csv,method,str,"Probability or threshold strategy; source methods transfer unchanged, target methods fit only in local calibration images."
+Development_to_consensus_threshold_transfer.csv,feasible,bool,Whether the threshold rule yielded a finite threshold for this attempt.
+Development_to_consensus_threshold_transfer.csv,threshold,float64,Scores greater than or equal to this value are flagged.
+Development_to_consensus_threshold_transfer.csv,tp,int64,True positives among reference-positive assessment images.
+Development_to_consensus_threshold_transfer.csv,fn,int64,False negatives among reference-positive assessment images.
+Development_to_consensus_threshold_transfer.csv,tn,int64,True negatives among reference-negative assessment images.
+Development_to_consensus_threshold_transfer.csv,fp,int64,False positives among reference-negative assessment images.
+Development_to_consensus_threshold_transfer.csv,sensitivity,float64,tp/(tp+fn).
+Development_to_consensus_threshold_transfer.csv,specificity,float64,tn/(tn+fp).
+Model_registry_and_training.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Model_registry_and_training.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Model_registry_and_training.csv,size,str,Nominal nested training image count; all denotes the full source-specific subset.
+Model_registry_and_training.csv,seed,int64,"Training random seed (1, 2, or 3)."
+Model_registry_and_training.csv,architecture,str,ImageNet-initialized classifier backbone.
+Model_registry_and_training.csv,schedule,str,"matched = final model at 20,000 updates; convergence = best source-validation checkpoint under the stated stopping rule."
+Model_registry_and_training.csv,training_images,int64,"Training images for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Model_registry_and_training.csv,training_patients,int64,"Training patients for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Model_registry_and_training.csv,validation_images,int64,"Validation images for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Model_registry_and_training.csv,validation_patients,int64,"Validation patients for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Model_registry_and_training.csv,updates,int64,Realized optimizer updates in the run.
+Model_registry_and_training.csv,best_update,int64,Update with maximal recorded source-validation selection metric; matched models still use the final checkpoint.
+Model_registry_and_training.csv,stop_reason,str,"Stop reason for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Model_registry_and_training.csv,hours,float64,"Hours for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Paired_scale_gains.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Paired_scale_gains.csv,architecture,str,ImageNet-initialized classifier backbone.
+Paired_scale_gains.csv,schedule,str,"matched = final model at 20,000 updates; convergence = best source-validation checkpoint under the stated stopping rule."
+Paired_scale_gains.csv,reference_policy,str,Reader aggregation or consensus definition used for evaluation.
+Paired_scale_gains.csv,images,int64,Number of images in the indicated analysis or bin.
+Paired_scale_gains.csv,gain,float64,"Full-size minus smallest-size macro-AUROC, averaged over three fixed seed pairs."
+Paired_scale_gains.csv,between_seed_SD,float64,Sample SD of three seed-paired AUROC differences; separate from bootstrap intervals.
+Paired_scale_gains.csv,valid_bootstrap_replicates,int64,"Valid bootstrap replicates for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Paired_scale_gains.csv,requested_bootstrap_replicates,int64,"Requested bootstrap replicates for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Paired_scale_gains.csv,paired_seed_1_gain,float64,Full-minus-smallest macro-AUROC for the designated fixed seed pair.
+Paired_scale_gains.csv,paired_seed_2_gain,float64,Full-minus-smallest macro-AUROC for the designated fixed seed pair.
+Paired_scale_gains.csv,paired_seed_3_gain,float64,Full-minus-smallest macro-AUROC for the designated fixed seed pair.
+Paired_scale_gains.csv,bootstrap_95_lower,float64,Percentile endpoint from paired image bootstrap; 97_5 denotes a 97.5% interval and 95 denotes a 95% interval.
+Paired_scale_gains.csv,bootstrap_95_upper,float64,Percentile endpoint from paired image bootstrap; 97_5 denotes a 97.5% interval and 95 denotes a 95% interval.
+Paired_scale_gains.csv,bootstrap_97_5_lower,float64,Percentile endpoint from paired image bootstrap; 97_5 denotes a 97.5% interval and 95 denotes a 95% interval.
+Paired_scale_gains.csv,bootstrap_97_5_upper,float64,Percentile endpoint from paired image bootstrap; 97_5 denotes a 97.5% interval and 95 denotes a 95% interval.
+Reliability_binned_seed1.csv,source,str,Source used to train the image classifier: chexpert or nih.
+Reliability_binned_seed1.csv,seed,int64,"Training random seed (1, 2, or 3)."
+Reliability_binned_seed1.csv,finding,str,Imaging finding represented by the binary reference label.
+Reliability_binned_seed1.csv,method,str,"Probability or threshold strategy; source methods transfer unchanged, target methods fit only in local calibration images."
+Reliability_binned_seed1.csv,bin,int64,Equal-frequency bin index for the descriptive seed-1 reliability curve.
+Reliability_binned_seed1.csv,mean_probability,float64,Mean transformed or raw score in a reliability bin.
+Reliability_binned_seed1.csv,observed_positive_fraction,float64,Mean binary consensus label in a reliability bin.
+Reliability_binned_seed1.csv,images,float64,Number of images in the indicated analysis or bin.
+Source_label_counts.csv,cohort,str,"Cohort for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Source_label_counts.csv,finding,str,Imaging finding represented by the binary reference label.
+Source_label_counts.csv,images,int64,Number of images in the indicated analysis or bin.
+Source_label_counts.csv,evaluable,int64,"Evaluable for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Source_label_counts.csv,positive,int64,"Positive for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Source_label_counts.csv,negative,int64,"Negative for the cohort, model, finding, or method identified in the same row; see Supplementary Methods."
+Source_training_trajectories.csv,run_id,str,Identifier of a trained model configuration; not a patient or image identifier.
+Source_training_trajectories.csv,updates,int64,Realized optimizer updates in the run.
+Source_training_trajectories.csv,validation_macro_auroc,float64,Four-finding AUROC on observed source-validation labels at a recorded training update.

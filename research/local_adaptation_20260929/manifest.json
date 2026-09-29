@@ -1,0 +1,382 @@
+[
+  {
+    "file": "Code/code_provenance.json",
+    "bytes": 6178,
+    "sha256": "da95200c99bee177b36b4266d0efc20b84172dbda5c705452ab8a6122258aa6a"
+  },
+  {
+    "file": "Code/figures/base_design.py",
+    "bytes": 27852,
+    "sha256": "6e063c70ae0fc411c7c1da5c0040ed056e950a535c9ecbe4fda07857956ec1d1"
+  },
+  {
+    "file": "Code/figures/reproduce_current_figures.py",
+    "bytes": 11286,
+    "sha256": "54b1e9d830864638d1bbc1304b4767467c8b11611620566b29718fc230233fca"
+  },
+  {
+    "file": "Code/nc_research/cxr_lossless_cache.py",
+    "bytes": 14792,
+    "sha256": "59eb318de0be51090660c36a14cdae30b9a8264ce5ce7fd5922c6f98c8f985f3"
+  },
+  {
+    "file": "Code/nc_research/prepare_study.py",
+    "bytes": 7495,
+    "sha256": "78d997792bf52ec40240ebd712c5c79aefd1640519ac9b78ff08e359bf9b6466"
+  },
+  {
+    "file": "Code/nc_research/test_controlled.py",
+    "bytes": 2888,
+    "sha256": "0513b12e3162124417aada2ff1e992bd6c22460ac325164503c88ceba25a29b6"
+  },
+  {
+    "file": "Code/nc_research/train_controlled.py",
+    "bytes": 13300,
+    "sha256": "d771ecfb78d83a88cf97a2a3da48694b0bef6ad974c7d7436f55df5f2c16f429"
+  },
+  {
+    "file": "Code/nc_research_v2/analyze_local.py",
+    "bytes": 9205,
+    "sha256": "bd3aee7843a4a22770968c8270077000112c2c72c66ace7514014f19a425c9db"
+  },
+  {
+    "file": "Code/nc_research_v2/head_operating_uncertainty.py",
+    "bytes": 3361,
+    "sha256": "ec6193f08010493dca0488a3ab29e6c97f370f7103bc96faaab911a92a6c2bdb"
+  },
+  {
+    "file": "Code/nc_research_v2/head_uncertainty.py",
+    "bytes": 3065,
+    "sha256": "ff46557c1b9b51201854a2e590b25880b6c63020242085261aa625fccec8331c"
+  },
+  {
+    "file": "Code/nc_research_v2/protocol.json",
+    "bytes": 4191,
+    "sha256": "393c685b38ade67b97856ae0abe4d5086d2971007129b7d4898d5c9d9793baa9"
+  },
+  {
+    "file": "Code/nc_research_v2/summarize.py",
+    "bytes": 3387,
+    "sha256": "2ae66da5d939c788a43bf13faa4a3cd87644dc388b0ae03ed10e2be941bb2c0e"
+  },
+  {
+    "file": "Code/nc_research_v2/test_extension.py",
+    "bytes": 1112,
+    "sha256": "30797e4342e8a74659a35750f557a68a54facf059cf298c2433aea7535778082"
+  },
+  {
+    "file": "Code/nc_research_v2/train_local_heads.py",
+    "bytes": 5877,
+    "sha256": "1b15dd6fc85aef81fd6d011f9cdcfc052e6e7e2908ffa19f93499af56e1bc751"
+  },
+  {
+    "file": "Code/nc_research_v2/uncertainty.py",
+    "bytes": 5084,
+    "sha256": "ee40ac02a7018231601d0807b65a1737ecc7e2dd2d4e0dac6e0687223ff3c018"
+  },
+  {
+    "file": "Code/nc_research_v3/effect_audit.py",
+    "bytes": 4369,
+    "sha256": "d9ded59a176037f3bd6db33bbf9fbd3527a36d9de507e8aed9b7ebeb86a58343"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/consensus_metadata.py",
+    "bytes": 5506,
+    "sha256": "e0687adb3c81fa19e9c6533e826f5187f925eab82cb9d3eb81ccd9f2a4dbd474"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/consensus_statistics.py",
+    "bytes": 11528,
+    "sha256": "ca26d4e06da4c7c958f01da569554dd8605d1fbe5cecc4fc4e4b49094c2978d3"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/controlled_statistics.py",
+    "bytes": 14611,
+    "sha256": "d54706ccdccf5febb4876ddbe1ee2515c3fcacb66a5944ace21fbd092cbe9704"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/controlled_statistics_protocol.json",
+    "bytes": 3468,
+    "sha256": "9929fe481cacf989720944c66f404441d615378505aca441a4d2d94dac27ab07"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/target_strategy_protocol.json",
+    "bytes": 3833,
+    "sha256": "01eca878b04efd12517852b1296eb9322088a238083c0837dc78b5d9abfba931"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/test_controlled_statistics.py",
+    "bytes": 3945,
+    "sha256": "0db86c951b482c1d376583fb4c6a1c9155e40409d7b4867918e77f77030bae70"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/test_threshold_strategy.py",
+    "bytes": 1586,
+    "sha256": "8cc8b61fa68642ffa5e67c4d82a92ebebd752c14e937e93cc6e933d1a46405a8"
+  },
+  {
+    "file": "Code/nejm_ai_recovery/threshold_strategy.py",
+    "bytes": 10624,
+    "sha256": "7c26fa2fe055bcd14fd808ebf965c8e5e5d1e642af801a0888c5cf19c9e2aa3d"
+  },
+  {
+    "file": "Code/protocols/local_extension.json",
+    "bytes": 4191,
+    "sha256": "393c685b38ade67b97856ae0abe4d5086d2971007129b7d4898d5c9d9793baa9"
+  },
+  {
+    "file": "Code/protocols/paired_statistics.json",
+    "bytes": 3468,
+    "sha256": "9929fe481cacf989720944c66f404441d615378505aca441a4d2d94dac27ab07"
+  },
+  {
+    "file": "Code/protocols/source_training.json",
+    "bytes": 5014,
+    "sha256": "75c701f226e1e2cf7a87eb3b71a8b2fb424c439742bfdcafbfd4c09c0657ab93"
+  },
+  {
+    "file": "Code/protocols/threshold_strategy.json",
+    "bytes": 3833,
+    "sha256": "01eca878b04efd12517852b1296eb9322088a238083c0837dc78b5d9abfba931"
+  },
+  {
+    "file": "Code/README.md",
+    "bytes": 3801,
+    "sha256": "4417b10f1161442ce9b8afa14c5c306a20062893956f9c21e8964c7932e8925a"
+  },
+  {
+    "file": "Code/requirements-analysis.txt",
+    "bytes": 72,
+    "sha256": "80622655800aaac3015541ef67f8838fbe26615ac5e6185e6a3ac8d0bbcf29e1"
+  },
+  {
+    "file": "Code/requirements-training.txt",
+    "bytes": 47,
+    "sha256": "1773ce30d68bb8ad61c8458b34eb350478f51b694785f7bb6cdd92c63ed97337"
+  },
+  {
+    "file": "Code/verify_aggregate_results.py",
+    "bytes": 3458,
+    "sha256": "766615960b8c4b6fec2fb36f688fb7ee0f277149cf78903557f91c463030b537"
+  },
+  {
+    "file": "README.md",
+    "bytes": 774,
+    "sha256": "d80b2353fae46ad818eeb87838d969070d05f3b877ca75b6106df6d070ca929c"
+  },
+  {
+    "file": "Source_Data/Assessment_calibration_diagnostics.csv",
+    "bytes": 20080,
+    "sha256": "c225996048ef9fee120077590fe1a17f7b00afed52fb8af3418d42c3afa582c1"
+  },
+  {
+    "file": "Source_Data/Clinical_operating_points.csv",
+    "bytes": 1284,
+    "sha256": "edae9ad523cbd636c03724d4e375974eeeeb527e6696861dc694852b89200748"
+  },
+  {
+    "file": "Source_Data/Cohort_characteristics.csv",
+    "bytes": 728,
+    "sha256": "100c82968791799b37b91a40a72221b3ead8a8e853d67aa29509e623b0e992da"
+  },
+  {
+    "file": "Source_Data/Conditional_exact_operating_intervals.csv",
+    "bytes": 3895,
+    "sha256": "f8c277670bfdc5ab4aacd10a69b18e48a0823e3c7251c5cdcd1e5093a07767c2"
+  },
+  {
+    "file": "Source_Data/Consensus_calibration_all_attempts.csv",
+    "bytes": 2349541,
+    "sha256": "aa7e9745011b201045cc3e44a4947515c064e121676f6c4528ff343dd7e212c9"
+  },
+  {
+    "file": "Source_Data/Consensus_calibration_maps.csv",
+    "bytes": 24082,
+    "sha256": "2771ffdf34893decd95ad21bccd1d979462eea2b616972c4009396c0d379727d"
+  },
+  {
+    "file": "Source_Data/Consensus_label_counts.csv",
+    "bytes": 425,
+    "sha256": "bc187fc21c37e8101f7c74b47cb26ed98db279acb4921e7a099ca2e2bd5558af"
+  },
+  {
+    "file": "Source_Data/Consensus_macro_metrics.csv",
+    "bytes": 10275,
+    "sha256": "01b88a9ea6470f020e66b00aa73d4b2546524b316f02d72c5a1fbea95579d371"
+  },
+  {
+    "file": "Source_Data/Consensus_paired_strategy_differences.csv",
+    "bytes": 13268,
+    "sha256": "0d4d2a08b746d03ed340b76fed7af65ae1f09d1fea28e921a8390baede77a2af"
+  },
+  {
+    "file": "Source_Data/Consensus_per_finding_metrics.csv",
+    "bytes": 46747,
+    "sha256": "dd2e28ca2a3490d471a56babff7fa11a145e354f030ccef7bd8c4b6d25cccb29"
+  },
+  {
+    "file": "Source_Data/Consensus_threshold_all_attempts.csv",
+    "bytes": 1038671,
+    "sha256": "c9aebee3890768f36b62030d18eb3daeb5c6aa8b19a4abca1e7aa4384e3fffc8"
+  },
+  {
+    "file": "Source_Data/Data_catalog.csv",
+    "bytes": 14057,
+    "sha256": "39e57920e509546e38dd9bc2fa3f3a42c56108a84071a8859b508f1a88547d69"
+  },
+  {
+    "file": "Source_Data/Data_dictionary.csv",
+    "bytes": 23633,
+    "sha256": "e73be5c28f24738e170a10f1be51e9e946732bea942304b0b38efee91f55e8b3"
+  },
+  {
+    "file": "Source_Data/Data_dictionary.json",
+    "bytes": 13549,
+    "sha256": "58da346938aad1b6b1fa3c466c648467d42a457c6a90af62330a30343b8abc95"
+  },
+  {
+    "file": "Source_Data/Development_same_image_reference_metrics.csv",
+    "bytes": 150481,
+    "sha256": "fc83bd20bff62fb4fea44dd1268e51e61d9498748a17043c182191ce63032b7d"
+  },
+  {
+    "file": "Source_Data/Development_to_consensus_threshold_transfer.csv",
+    "bytes": 76418,
+    "sha256": "5d0282d419583ca032f561e9e342cfe9f20089408b5fc8506a5d452cf14acc5e"
+  },
+  {
+    "file": "Source_Data/Effect_audit_status.json",
+    "bytes": 688,
+    "sha256": "6c2f9da4c6e2666dfbf893889a689d366dfd07e452950429f2e6aeb3f005689b"
+  },
+  {
+    "file": "Source_Data/Exact_finite_pool_feasibility.csv",
+    "bytes": 583,
+    "sha256": "6584c2bfa9de5c255e948818c432068195667db605b9d85e63badf95be9204cc"
+  },
+  {
+    "file": "Source_Data/Head_effect_bootstrap.csv",
+    "bytes": 4001718,
+    "sha256": "4917472e309db51e9466fd220a02830548609cd7191abd102d80ff75875c2df6"
+  },
+  {
+    "file": "Source_Data/Head_effects_and_source_contrasts.csv",
+    "bytes": 5737,
+    "sha256": "0496d21d91e6ecac8466de87089aa0e6bcedb9c98aeba960d66d25178c84613a"
+  },
+  {
+    "file": "Source_Data/Hypothetical_error_costs.csv",
+    "bytes": 27096,
+    "sha256": "4aa7f72e10ef18fc3a4f793065fe2cc71a2a9a72dc64d3984c3e036b40f2ac6d"
+  },
+  {
+    "file": "Source_Data/Joint_bootstrap_draws.csv",
+    "bytes": 516835,
+    "sha256": "243b90a5ded0b2d8b703efecfbb5c66c7e3fd65953e9d428ffe06f65d242bf34"
+  },
+  {
+    "file": "Source_Data/Joint_paired_strategy_differences.csv",
+    "bytes": 1319,
+    "sha256": "44f956536a5c721d3e18d61c2303751beb6cf21964f2f776d93997dc1801bbb7"
+  },
+  {
+    "file": "Source_Data/Joint_uncertainty_summary.csv",
+    "bytes": 3032,
+    "sha256": "2159d20ca462f9da5062c548da6dcc911d7b49d3d1a181f070ab92cbaf7d45ef"
+  },
+  {
+    "file": "Source_Data/Local_head_fit_attempts.csv",
+    "bytes": 59619,
+    "sha256": "82d9fa41b039536ab0add638e245b70638ca795629c459f20bc5beff5fcc79c8"
+  },
+  {
+    "file": "Source_Data/Local_head_metrics.csv",
+    "bytes": 178512,
+    "sha256": "2e3b99ed3dd9eb7ffcc832d6ee71f6c845f48a866403c3fe84c459999020afe5"
+  },
+  {
+    "file": "Source_Data/Local_head_operating_bootstrap.csv",
+    "bytes": 430523,
+    "sha256": "aa47e6156c37e5ac96cafbf2f67b0a85866c4a8165c574a476142d0e5b3dc781"
+  },
+  {
+    "file": "Source_Data/Local_head_operating_intervals.csv",
+    "bytes": 5654,
+    "sha256": "b088f0751ff327c092c1ae6edc0e9efb325f274bc438ae19f7b58e8cae2906d8"
+  },
+  {
+    "file": "Source_Data/Local_head_paired_intervals.csv",
+    "bytes": 7096,
+    "sha256": "b90e2786428183f5e3ba0f6f9bf382650e93a0def49a5a7aa62158c0156b42b3"
+  },
+  {
+    "file": "Source_Data/Local_head_summary.csv",
+    "bytes": 9702,
+    "sha256": "2c97dc12e7dd0869352313acd64910118b1178f8602b9c9cd78bcf222a7d2537"
+  },
+  {
+    "file": "Source_Data/Local_sample_composition.csv",
+    "bytes": 89313,
+    "sha256": "8012efeeeb6cf5d350351846adb59b8cf4984c57199e28d40b3b00fe86d98e49"
+  },
+  {
+    "file": "Source_Data/Model_registry_and_training.csv",
+    "bytes": 10195,
+    "sha256": "593c957e84caa6ee025cf6580de639dd6e4481e06767cec2708a4a5e3e0c7bac"
+  },
+  {
+    "file": "Source_Data/Paired_scale_gains.csv",
+    "bytes": 1654,
+    "sha256": "f769d5ca5637a73492a77478285f5ce99fea69af5b7d665d179ed56427b1fb99"
+  },
+  {
+    "file": "Source_Data/Positive_count_summary.csv",
+    "bytes": 5422,
+    "sha256": "f2b34c6786f916303af9fbf23f64bc73815ccef0429a3fea6ad74648c3f1556e"
+  },
+  {
+    "file": "Source_Data/Positive_count_threshold_experiment.csv",
+    "bytes": 4895142,
+    "sha256": "560f781f4c7b218d918402414b180105ab6c6974d24dd7052afda3d50c9023e3"
+  },
+  {
+    "file": "Source_Data/Probability_budget_all_attempts.csv",
+    "bytes": 18472534,
+    "sha256": "6b249671e5901d6811db9458c19b292eebc2202a4434d75279e6ecc4db5ba2e7"
+  },
+  {
+    "file": "Source_Data/Probability_budget_summary.csv",
+    "bytes": 28493,
+    "sha256": "0e1dfb1d4c9f6ba0516a3dd82a0ebe34db35757de6897a73c929f9b500486611"
+  },
+  {
+    "file": "Source_Data/README.md",
+    "bytes": 2499,
+    "sha256": "6e0c0ac4f39ec515f17c669d5823dbd0bb20858f4d6cac8d6aa2482cca26eae8"
+  },
+  {
+    "file": "Source_Data/Reliability_binned_seed1.csv",
+    "bytes": 4849,
+    "sha256": "d2ff4be96e3900f0eeb63bb90329527c291492721b646cd6c67c0336adfe1dfd"
+  },
+  {
+    "file": "Source_Data/Source_label_counts.csv",
+    "bytes": 893,
+    "sha256": "602c662efd8f316edc018120218664b90a11aac928e7287eb64fbcb05902bc1d"
+  },
+  {
+    "file": "Source_Data/Source_training_trajectories.csv",
+    "bytes": 22838,
+    "sha256": "be3c8b11661d486c1176f3255ac8d8ecfbea8acafeb66a9aac0298297ec117c1"
+  },
+  {
+    "file": "Source_Data/Threshold_budget_all_attempts.csv",
+    "bytes": 15191662,
+    "sha256": "1b61ad27177542f4996deef8e3ba1942873d7c6d8bce66baaf69da958149288e"
+  },
+  {
+    "file": "Source_Data/Threshold_budget_summary.csv",
+    "bytes": 37541,
+    "sha256": "af6a47c0fb145a3da2be601b74d89b67cafe9429edc5e7dffc83e094ec42a1e8"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "version": "NC-controls-v1.1-20260917",
+  "working_title": "Training data scale reference standards and the transportability of chest radiograph models",
+  "result_root": "PRIVATE_PROJECT/results_nc_controls_v1",
+  "original_source_dir": "PRIVATE_PROJECT/src",
+  "cache_path": "PRIVATE_CACHE/cache.sqlite3",
+  "batch_size": 32,
+  "validation_batch_size": 128,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "primary_loss": "Unweighted masked BCE; no subset-dependent positive-class weights",
+  "validation": "All available source-only frontal validation images, fixed across scales and seeds",
+  "training": {
+    "convergence": {
+      "max_updates": 50000,
+      "min_updates": 5000,
+      "validation_every": 1000,
+      "patience_checks": 6
+    },
+    "matched": {
+      "max_updates": 20000,
+      "min_updates": 20000,
+      "validation_every": 1000,
+      "patience_checks": 1000
+    }
+  },
+  "early_stopping": "Source macro-AUROC improvement greater than 0.001 resets patience; six failed checks after at least 5000 updates and at least two learning-rate reductions. Reaching maximum updates is reported as a cap, not convergence.",
+  "learning_rate_schedule": "Convergence: ReduceLROnPlateau, factor 0.2, patience 2, absolute threshold 0.001, minimum 1e-6. Matched: fixed cosine after 500-update warmup, minimum 1e-6.",
+  "image_handling": "224 by 224 RGB bilinear resize, horizontal flip p=0.5, rotation plus/minus 5 degrees, ImageNet normalization; strict image decode; no blank replacements",
+  "sampler": "Successive patient-defined nested subsets; shuffled image permutations concatenated across boundaries to produce exactly 32 images per optimizer update; no dropped tail",
+  "architecture_control": "ImageNet ResNet-34 at 1000, 10000 and all, seeds 1,2,3; no CXR-pretrained foundation model in primary comparisons",
+  "pilot_scope": "After technical completion checks of the initial source-only runs, execute 18 fixed-budget and 18 ResNet-34 controls. No test performance is used to permit continuation.",
+  "test_status": {
+    "vindr_3000": "Locked pending historical-use audit and resolution of author uncertainty; labels/performance are not accessed by this protocol's preparation or source training",
+    "vindr_15000": "Previously evaluated development benchmark; never described as a new untouched test cohort",
+    "new_hospital": "Unavailable",
+    "expert_reread": "Unavailable"
+  },
+  "primary_estimand_proposed": "Smallest-to-full mean seed-paired macro-AUROC difference separately for each training source on the official VinDr consensus test; confirmatory status depends on documented test independence",
+  "uncertainty": "Use identical test resampling weights for paired model contrasts. Report image-sampling intervals separately from between-seed SD. VinDr image identifiers cannot establish patient independence. Primary two-source comparisons use 97.5% percentile intervals for familywise Bonferroni coverage plus descriptive 95% intervals. Seed resampling is a sensitivity analysis, not additional hospitals.",
+  "secondary_endpoint": "Pleural-effusion sensitivity and specificity at a locked source-development threshold targeting 90% sensitivity; target threshold re-estimation is a separate strategy. No hospital-workload claim.",
+  "reference_analysis": "Compare any-reader, majority-reader and all-reader aggregation on exactly the same 15000 released development images. None is newly adjudicated ground truth. Preserve original per-reader labels and report agreement and event counts.",
+  "target_adaptation_development": "Reuse previously defined 20%/80% VinDr development split with unchanged salt ldh-2026. Nested random calibration samples 250,500,1000,2000; 20 sampling seeds. Ridge logistic calibration on clipped logits (C=1) only when at least 5 positives and 5 negatives; otherwise report non-fit. Compare raw score, constant prevalence estimated on calibration sample, calibrated probability and target-derived threshold; no test outcome is used for fitting.",
+  "composition_intervention": "Planned fixed 20000-image samples at CheXpert:NIH 100:0,75:25,50:50,25:75,0:100, same update budget. Labels remain source-dependent; no pure institution effect claim. Train membership remains patient isolated.",
+  "label_quality_intervention": "Not yet available; reader aggregation and synthetic corruption are not substitutes for paired expert correction of training labels.",
+  "analysis_status": "Internal dated protocol, not preregistration. Earlier benchmark analyses remain post hoc. Substantive protocol changes require a new version and recorded reason before final test access.",
+  "reproducibility_amendment": "Dedicated DataLoader generators isolate iterator creation from augmentation RNG; checkpoint-resume trajectory tested. First unfinished v1 run archived before any validation result or external evaluation.",
+  "matched_primary_checkpoint": "last.pt at exactly 20000 actual optimizer updates; source-selected best.pt is secondary only"
+}
