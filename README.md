@@ -1,11 +1,12 @@
 # Chest Radiograph AI: Training Scale and Local Adaptation
+<img width="2728" height="2048" alt="image" src="https://github.com/user-attachments/assets/79a1a444-a2bd-4839-9681-f4085b10b7c5" />
 
-Reproducible research code for studying how chest X-ray training-set size affects internal performance, external generalization, calibration, and diminishing returns.
+Research code for studying how chest X-ray training-set size affects internal performance, external generalization, calibration, and diminishing returns.
 
 The formal experiment grid contains two training sources (NIH ChestX-ray14 and CheXpert v1.0), five sample-size conditions (`1k`, `5k`, `10k`, `50k`, and all available training images), and three seeds. VinDr-CXR v1.0.0 is used as an external cohort. Formal mode keeps the validation cohort fixed across seeds and writes to a separate output tree so that exploratory or recovered legacy results cannot be mixed with the formal rerun.
 
-## Local adaptation release — 29 September 2026
-
+## Local adaptation release (Sep. 2026)
+）
 [Code, aggregate results and reproduction instructions](research/local_adaptation_20260929/README.md) accompany the current four-figure manuscript. This completed release comprises 66 source classifiers, optimization and architecture controls, local probability and threshold analyses, and 576 requested binary local-head fits (468 successful). It supersedes the original fixed-five-epoch comparison for the controlled claims reported in this manuscript.
 
 The main clinical illustration examines how local adjustment changes missed pleural-effusion labels and false-positive flags on a fixed public consensus-reference assessment set. The extension is retrospective and exploratory; image separation, historical test-use uncertainty, fitting failures and uncertainty conditioning are documented. These results describe the study benchmark rather than established hospital workflow benefits.
@@ -112,7 +113,3 @@ python -m unittest discover -s tests -v
 ```
 
 At repository preparation time, all 94 tests passed. This verifies the code-level safeguards; it does not replace dataset checksum verification, manifest auditing, GPU-run completion checks, or external validation.
-
-## Research-use boundary
-
-This is research software, not a medical device. It must not be used to diagnose patients or direct clinical care. Any manuscript or deployment claim should remain tied to the audited cohort definitions, prespecified splits, independent validation, calibration, subgroup analysis, and decision-utility evidence.
